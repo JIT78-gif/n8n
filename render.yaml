@@ -1,1 +1,25 @@
-
+services:
+  - type: web
+    name: n8n-server
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: N8N_PORT
+        value: 10000
+      - key: N8N_ENCRYPTION_KEY
+        value: "tneSIPQK3+GB3gVuRAsbb5t4Mhu/LgQi"
+      - key: DB_TYPE
+        value: postgresdb
+      - key: DB_POSTGRESDB_DATABASE
+        value: "REPLACE_WITH_NEON_DB_NAME"
+      - key: DB_POSTGRESDB_HOST
+        value: "REPLACE_WITH_NEON_HOSTNAME"
+      - key: DB_POSTGRESDB_PORT
+        value: "5432"
+      - key: DB_POSTGRESDB_USER
+        value: "REPLACE_WITH_NEON_USERNAME"
+      - key: DB_POSTGRESDB_PASSWORD
+        value: "REPLACE_WITH_NEON_PASSWORD"
