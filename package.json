@@ -1,0 +1,10 @@
+{
+  "name": "render-n8n",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx n8n"
+  },
+  "dependencies": {
+    "n8n": "latest"
+  }
+}
