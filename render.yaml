@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: n8n-cloud-server
+    name: n8n-server-final
     runtime: node
     plan: free
     region: singapore
@@ -16,10 +16,10 @@ services:
       - key: DB_POSTGRESDB_PORT
         value: "5432"
       - key: DB_POSTGRESDB_DATABASE
-        value: "ENTER_NEON_DB_NAME_HERE"
+        value: "ENTER_YOUR_NEON_DB_NAME"
       - key: DB_POSTGRESDB_HOST
-        value: "ENTER_NEON_HOST_HERE"
+        value: "ENTER_YOUR_NEON_HOST"
       - key: DB_POSTGRESDB_USER
-        value: "ENTER_NEON_USER_HERE"
+        value: "ENTER_YOUR_NEON_USER"
       - key: DB_POSTGRESDB_PASSWORD
-        value: "ENTER_NEON_PASSWORD_HERE"
+        value: "ENTER_YOUR_NEON_PASSWORD"
