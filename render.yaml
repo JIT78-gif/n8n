@@ -23,3 +23,5 @@ services:
         value: "neondb_owner"
       - key: DB_POSTGRESDB_PASSWORD
         value: "npg_akCs1DZblHL7"
+      - key: DB_POSTGRESDB_SSL_REJECT_UNAUTHORIZED
+        value: "false"
