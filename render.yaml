@@ -9,6 +9,8 @@ services:
     envVars:
       - key: N8N_PORT
         value: 10000
+      - key: WEBHOOK_URL  # <--- ADD THIS
+        value: "https://n8n-cloud-server.onrender.com/"
       - key: N8N_ENCRYPTION_KEY
         value: "tneSIPQK3+GB3gVuRAsbb5t4Mhu/LgQi"
       - key: DB_TYPE
